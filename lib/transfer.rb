@@ -9,7 +9,8 @@ class Transfer
   end
 
   def valid?
-    transacton = BankAccount.all.select {|name| name == @sender || name == @receiver}
+    people = BankAccount.all.select {|acct| acct.name == @sender || acct.name == @receiver}
+    people.each {|acct| acct.}
   end
 
   def execute_transaction
