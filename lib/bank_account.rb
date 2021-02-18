@@ -1,4 +1,5 @@
 class BankAccount
+  attr_accessor :status, :balance
   attr_reader :name
 
   def initialize(name)
@@ -24,7 +25,7 @@ class BankAccount
   end
 
   def close_account
-    
+
 
   describe '#close_account' do
     it "can close its account" do
