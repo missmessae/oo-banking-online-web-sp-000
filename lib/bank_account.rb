@@ -1,5 +1,5 @@
 class BankAccount
-  attr_accessor :name
+  attr_reader :name
 
   def initialize(name)
     @name = name       #need to figure out how to not allow name changes
@@ -12,6 +12,6 @@ class BankAccount
   end
 
   def display_balance
-    "Your balance is $#{self.balance}."
+    puts "Your balance is $#{self.balance}."
 
 end
