@@ -10,7 +10,7 @@ class Transfer
 
   def valid?
     accounts = BankAccount.all.select {|acct| acct.name == @sender || acct.name == @receiver}
-    accounts.each {|a| a.}
+    accounts.each {|a| a.valid?}
   end
 
   def execute_transaction
