@@ -2,7 +2,7 @@ class BankAccount
   attr_reader :name
 
   def initialize(name)
-    @name = name       #need to figure out how to not allow name changes
+    @name = name
     @balance = 1000
     @status = "open"
   end
