@@ -11,6 +11,7 @@ class Transfer
   def valid?
     accounts = BankAccount.all.select {|acct| acct.name == @sender || acct.name == @receiver}
     if accounts.each {|a| a.valid?}
+      return true
     else
       return false
     end
