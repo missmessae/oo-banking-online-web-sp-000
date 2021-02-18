@@ -21,8 +21,6 @@ class Transfer
       return "Transaction rejected. Please check your account balance."
       @status = "rejected"
     end
-
-
   end
 
   def reverse_transfer
