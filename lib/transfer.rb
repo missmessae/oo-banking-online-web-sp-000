@@ -9,12 +9,7 @@ class Transfer
   end
 
   def valid?
-    accounts = BankAccount.all.select {|acct| acct.name == @sender || acct.name == @receiver}
-    if accounts.each {|a| a.valid?}
-      return true
-    else
-      return false
-    end
+    @sender.valid? && @receiver.valid? ? true : false
   end
 
   def execute_transaction
