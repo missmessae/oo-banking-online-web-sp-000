@@ -25,7 +25,8 @@ class BankAccount
   end
 
   def close_account
-
+    if @status !== "closed"
+      @status = "closed"
 
   describe '#close_account' do
     it "can close its account" do
