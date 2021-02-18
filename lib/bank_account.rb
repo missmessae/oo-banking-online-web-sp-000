@@ -28,10 +28,4 @@ class BankAccount
       @status = "closed"
   end
 
-  describe '#close_account' do
-    it "can close its account" do
-      avi.close_account
-      expect(avi.status).to eq("closed")
-
-
 end
