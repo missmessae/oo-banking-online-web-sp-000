@@ -4,4 +4,6 @@ class Transfer
     @status = "pending"
   end
 
+  
+
 end
