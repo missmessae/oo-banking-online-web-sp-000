@@ -13,6 +13,7 @@ class Transfer
     if accounts.each {|a| a.valid?}
     else
       return false
+    end
   end
 
   def execute_transaction
