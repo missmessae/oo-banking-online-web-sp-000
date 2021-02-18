@@ -9,6 +9,7 @@ class Transfer
   end
 
   def valid?
+    transacton = BankAccount.all.select {|name| name == @sender || name == @receiver}
   end
 
   def execute_transaction
