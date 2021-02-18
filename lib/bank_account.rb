@@ -10,6 +10,10 @@ class BankAccount
     @@all << self
   end
 
+  def self.all
+    @@all
+  end
+
   def deposit(amount)
     @balance += amount
   end
